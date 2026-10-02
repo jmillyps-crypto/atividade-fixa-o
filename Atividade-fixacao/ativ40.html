@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 40</title>
+    <script defer>
+        function alterarParagrafo(){
+            var p = document.querySelectorAll('p')
+           
+        for(var i = 0; i < p.length; i = i + 1){
+            p[i].innerHTML = 'Alterado'
+        }
+            
+
+         
+        }
+    </script>
+</head>
+<body>
+    <p>Um texto legal aqui</p>
+    <p>Outro texto</p>
+    <p>Mais um texto</p>
+
+    <button onclick="alterarParagrafo()">Clique Aqui</button>
+</body>
+</html>

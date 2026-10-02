@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+    <script defer>
+        function pegarInput(){
+            var nome = document.querySelector("#nome")
+            var p = document.querySelector("p")
+
+            p.innerHTML = nome.value
+            p.innerHTML = 'Preenchido Automaticamente'
+
+         
+        }
+    </script>
+</head>
+<body>
+    
+    <h3>Digite seu nome: </h3>
+    <input type="text" id = "nome" name="nome">
+    <button onclick="pegarInput()">Clique Aqui</button>
+    <p></p>
+</body>
+</html>

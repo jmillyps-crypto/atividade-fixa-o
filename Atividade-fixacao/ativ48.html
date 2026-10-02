@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 48</title>
+    <script defer>
+        function adicionarnaLista(){
+            var lista = document.querySelector('ul')
+            var novo = document.createElement('li')
+            novo.innerHTML = 'Uva'
+
+            lista.appendChild(novo)
+         
+        }
+    </script>
+</head>
+<body>
+     <ul>
+        <li id="primeiro">Pera</li>
+        <li>Goiaba</li>
+        <li>Melancia</li>
+    </ul>
+
+    <button onclick="adicionarnaLista()">Clque aqui</button>
+</body>
+</html>

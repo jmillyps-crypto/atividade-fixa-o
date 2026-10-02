@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 52</title>
+    <script defer>
+      
+        proximo = 0
+        function trocarImagem(){
+
+            var lista = [
+                "img/gato.png",
+                "img/cavalo.png",
+                "img/cachorro.png"
+            ]
+
+            var imagem = document.querySelector('img')
+    
+             imagem.setAttribute("src", lista[proximo])
+
+             if (proximo === (lista.length - 1)) {
+                proximo = 0
+             } else {
+                proximo = proximo + 1
+             }
+        }
+        
+    </script>
+</head>
+<body>
+    
+    <img src="img/gato.png" width="500px">
+    
+    <button onclick="trocarImagem()">Trocar imagem</button>
+</body>
+</html>

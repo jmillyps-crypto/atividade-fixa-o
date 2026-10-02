@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 47</title>
+    <script defer>
+        function trocarImagem(){
+            var imagem = document.querySelector('#imag')
+            if (imagem.getAttribute('src') == "img/cachorro.png"){
+                imagem.src = "img/gato.png"
+            }
+            else{
+                imagem.src = "img/cachorro.png"
+            }
+            
+        }
+        
+    </script>
+</head>
+<body>
+    
+    <img src="img/gato.png" id="imag" width="500px">
+    <button onclick="trocarImagem()">Trocar imagem</button>
+</body>
+</html>

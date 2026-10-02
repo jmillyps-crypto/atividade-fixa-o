@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+    <script defer>
+        function exibirData(){
+           var ano = new Date().getFullYear()
+           var mes = new Date().getMonth() + 1
+           var dia = new Date().getDay()
+           var hora = new Date().getHours()
+           var minuto = new Date().getMinutes()
+           var segundo = new Date().getSeconds()
+
+
+           var data = dia + '/' + mes + '/' + ano
+            var horario = hora + ':' + minuto + ':' + segundo
+           document.querySelector('#exibirDia').innerHTML = data
+           document.querySelector('#exibirHora').innerHTML = horario
+
+           
+        }
+    </script>
+</head>
+<body>
+    
+    <p id="exibirDia"></p>
+    <p id="exibirHora"></p>
+
+    <button onclick="exibirData()">Clique Aqui</button>
+</body>
+</html>

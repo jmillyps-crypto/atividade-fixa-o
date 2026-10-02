@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 38</title>
+    <script defer>
+        function calculadora(){
+            var numero1 = Number(document.querySelector("#num1").value)
+            var numero2 = Number(document.querySelector("#num2").value)
+            var contar = numero1 + numero2
+
+            var p = document.querySelector("p")
+            p.innerHTML = 'A soma é: ' + contar
+
+         
+        }
+    </script>
+</head>
+<body>
+    
+    <h3>Digite um numero: </h3>
+    <input type="text" id = "num1" name="nome">
+    <h3>Digite outro numero: </h3>
+    <input type="text" id = "num2" name="nome">
+    <button onclick="calculadora()">Clique Aqui</button>
+    <p></p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 44</title>
+    <script defer>
+        function exibirHora(){
+           var hora = new Date().getHours()
+           var minuto = new Date().getMinutes()
+           var segundo = new Date().getSeconds()
+
+
+            var h2 = document.querySelector('#exibirHora')
+            var horario = hora + ':' + minuto + ':' + segundo
+        
+            h2.innerHTML = horario
+
+           
+        }
+    </script>
+</head>
+<body>
+    
+    <h2 id="exibirHora"></h2>
+    
+
+    <button onclick="exibirHora()">Ver Hora</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 54</title>
+    <script defer>
+        function calculadora(){
+            var numero = Number(document.querySelector("#num").value)
+            var contar = numero * 2
+
+            var p = document.querySelector("p")
+            p.innerHTML = 'O dobro é: ' + contar
+
+         
+        }
+    </script>
+</head>
+<body>
+    
+    <h3>Digite um numero: </h3>
+    <input type="text" id = "num" name="nome">
+    <button onclick="calculadora()">Clique Aqui</button>
+    <p></p>
+</body>
+</html>
